@@ -1,0 +1,21 @@
+body{
+     background-color: rgb(194, 195, 194);
+}
+div{
+    background-color: none;
+    border:2px solid aqua;
+}
+.nav-main{
+    margin: 6em;
+    
+    padding-top:5px;
+    text-align: center;
+}
+/*一列四格，且縮到一定尺寸自動切換成3/2，會自動換行，圖片大小不變   <---grid */
+.nav-main img{
+    object-fit: contain;
+    width: 20%;
+}
+.nav-text{
+    
+}
