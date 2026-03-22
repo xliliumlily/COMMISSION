@@ -1,9 +1,11 @@
 body{
-     background-color: rgb(194, 195, 194);
+    background:url(../img/03.png)repeat;
+    background-size:150px;
 }
 div{
     background-color: none;
     border:2px solid aqua;
+    color: #fff;
 }
 .nav-main{
     margin: 6em;
