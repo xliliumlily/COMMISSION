@@ -127,11 +127,12 @@ div{
 .main-content{   
     text-align: center;
     padding: 7em;
-    padding-bottom:2em;
+    /* padding-bottom:2em;  */    /*註解這個能去掉最底下沒被遮罩影響的空白部分*/
     padding-top:320px;   
     border:0.5px #fff solid;
     position: relative;
     box-shadow: inset 0px 0px 20px 14px #090909; /* 陰影 */
+    z-index: 999;
 }
 .main-content::after{
     position:absolute;/*不知道為甚麼要寫這個*/
@@ -195,16 +196,19 @@ div{
     justify-content: center;
 }
 
+
 .nav-floor{
     background-image:url("../img/06.png");
     background-size:100px;
     width:100%;
-    height:20vw; 
+    height:378px; 
+    position:absolute; /*解決底部問題*/
+    
 }
 .nav-floor::after{
     background: linear-gradient(to bottom, rgba(237,193,83,0.7) 0%,rgba(247,226,176,0) 54%,rgba(253,249,238,0) 90%,rgba(255,255,255,0) 100%);
     width:100%;
-    height:50%;
+    height:100%; /*調整100%填滿*/
     content:"";
     position:absolute;
     left:0px;
@@ -213,7 +217,7 @@ div{
 .nav-floor::before{
    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
     width:100%;
-    height:50%;
+    height:100%; /*調整100%填滿*/
     content:"";
     position:absolute;
     left:0px;
@@ -223,3 +227,25 @@ div{
 
 /*要有奇怪的花花還有裝飾用吊墜 背景跟地板顏色還要改*/
 
+@media (max-width: 768px) {
+    /*按鈕變成2*2*/
+    .nav-list{
+        flex-wrap: wrap; /*讓按鈕能換行*/
+        gap: 20px; /*讓行與行之間有間距*/
+    }
+    .nav-list button{
+        width: 45%; /*讓按鈕變寬以適應換行*/
+    }
+
+    .main-content::after{
+                width: 145px; /*調整左邊花花的大小*/
+        background-size: 145px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+        .image-word{
+        display:none; /*隱藏按鈕文字*/
+    }
+}
