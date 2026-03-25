@@ -12,15 +12,17 @@ div{
     color: transparent;
     position: fixed;
     width:100%;
-    background-color: #2e1e1d;
-    padding:1%;
-    padding-bottom:1vem;
+    height:100px;
+    background:url(../../img/02/03.png)repeat-x;
+    background-size:38px;
+
+    padding:0.7%;
+    
     top: 0px;
     z-index:999;
 }
 .nav-button{
     float: right;
-    margin-right:2%;
 }
 .nav-top button{
     /*想再更寬鬆一點*/
@@ -38,7 +40,10 @@ hr{
     display: inline-block;
     width: 100%;
     margin-top:0;
-    border: 0.1px solid #ffecec
+    /*這兩行我動到什麼了為甚麼需要加!important*/
+    border: 0.25px solid #ffffff !important;
+    opacity:1 !important;
+    
 }
 .nav-years p{
     margin-bottom:-1%;
@@ -61,8 +66,12 @@ hr{
     /*把背景圖弄暗一點*/
 }
 .nav-main::before{
-    content:"作品合集";
+    content:"";
     position: absolute;
+    background:url(../../img/02/04.png)no-repeat;
+    background-size:7em;
+    height:100%;
+    width: 100%;
     left: 0;
     top:-1.8em;
 }

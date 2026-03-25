@@ -22,6 +22,7 @@ div{
     border:0.5px solid rgb(60, 255, 144);/*為什麼這個的長寬不是跟body一樣大*/
     overflow: hidden; /*將右側超出的眶隱藏*/
 }
+/*
 .nav-after1::after{
     position:absolute;
     content: "";
@@ -34,7 +35,8 @@ div{
     top:-15px;
     filter: drop-shadow(0px 0px 2px #72624d);
 }
-
+    */
+/*
 .nav-after1::before{
     position:absolute;
     content: "";
@@ -47,8 +49,8 @@ div{
     background-position:top right;
     top:40px;
     right:-10px;
-
 }
+*/
 .nav-div{
     position:absolute;
 }
@@ -85,15 +87,17 @@ div{
 
 .nav-flex{
         width:100%;
-        height:100px;
+        height:100%;
+        background-size: 60px;
         background-color:transparent;
         background-image:url("../img/01.png");   
         background-repeat:repeat-x ;
         position:absolute;
         color: transparent;/*隱藏文字*/
         margin-bottom: 3em;
+        top:-9px;
         overflow : hidden; /*將右側超出的眶隱藏*/
-        
+    
 }
 /*蕾絲*/
 
@@ -117,11 +121,9 @@ div{
     background-size: 100%;
     background-repeat: no-repeat;
     width: 150px;
-    height: 200px; 
+    height:500px; 
     right: -50px;/*定位至最右邊*/
-    top:-80px;
-    z-index: 3;
-    
+    top:-40px;
 }/*花草2*/
 
 .main-content{   
@@ -145,7 +147,7 @@ div{
     left:-65px;/*因為.main-content的物件都被固定在中間且被設定了padding*/
     z-index:1;
     bottom:-90px;
-    border:0.5px #fff solid;
+    
 }/*花草1*/
 
 
