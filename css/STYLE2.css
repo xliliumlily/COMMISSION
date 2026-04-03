@@ -13,7 +13,7 @@ div{
     position: fixed;
     width:100%;
     height:100px;
-    background:url(../../img/02/03.png)repeat-x;
+    background:url(../img/02/03.png)repeat-x;
     background-size:38px;
 
     padding:0.7%;
@@ -52,28 +52,29 @@ hr{
 
 .nav-main{
     
-    font-size:20px;
+    font-size: 20px;
     letter-spacing: 2px;
     font-family: "Bodoni Moda", serif;
-    position:relative;
-    margin: 10%;
-    background-image:url(../img/02/01.png);
-    border-radius:15px;
-    padding:5%;
-    margin-top: 18%;
-    margin-bottom:20%;
+    position: relative;
+    margin: 0 10%; /*0 10%=左右10% 上下0% */
+    background-image: url(../img/02/01.png);
+    border-radius: 15px;
+    padding: 5%;
+    /* margin-top: 18%; */
+    margin-bottom: 20%;
     text-align: center;
+    
     /*把背景圖弄暗一點*/
 }
 .nav-main::before{
-    content:"";
+    /* content:"";
     position: absolute;
-    background:url(../../img/02/04.png)no-repeat;
+    background:url(../img/02/04.png)no-repeat;
     background-size:7em;
     height:100%;
     width: 100%;
     left: 0;
-    top:-1.8em;
+    top:-1.8em; */
 }
 
 /*一列四格，且縮到一定尺寸自動切換成3/2，會自動換行，圖片大小不變   <---grid */
@@ -96,5 +97,42 @@ hr{
     display:flex;
     flex-wrap:wrap;
     margin-bottom:10%;
+    justify-content: center; /*圖片置中?*/
     /*justify-content: center;*/
+}
+
+.modal-title{
+    /*調整大圖標題的顏色*/
+    color: #000 !important; 
+}
+
+.header-row {
+    display: flex;
+    align-items: center;      /* 垂直置中對齊 */
+    gap: 20px;
+    padding: 0 10%;
+    margin-top: 18%;
+    justify-content: space-between; /*讓標題和nav分開 */
+}
+
+.irasuto-header{
+    /*作品合集改成獨立class 比較好弄頁籤*/
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Bodoni Moda", serif;
+    border-radius: 15px;
+    padding-top: 3%;
+    margin-top: 18%;
+    background: url(../img/02/04.png) no-repeat;
+    background-size: 7em;
+    height: 100%;
+    width: 70%;
+    left: 0;
+
+    height: auto;
+    margin: 0;
+}
+
+.nav-link{
+    background-color: #fff !important; /*調整顏色*/
 }
