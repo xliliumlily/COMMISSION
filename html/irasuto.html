@@ -23,6 +23,15 @@
             <button>聯絡方式</button>
             <button>現不開放</button>
         </div>
+        <div class="nav-button-phone"><!--手機版的按鈕，點擊後會展開選單-->
+            <button class="phone-menu-btn">☰</button>
+            <div class="phone-menu" style="display:none;">
+                <button>回主頁</button>
+                <button>個人資料</button>
+                <button>聯絡方式</button>
+                <button>現不開放</button>
+            </div>
+        </div>
     </div>
         
     <div class="header-row">
@@ -225,6 +234,19 @@
             document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.nav-link')[pageNumber - 1].classList.add('active');
         }
+
+        //手機版選單功能
+        document.querySelector('.phone-menu-btn').addEventListener('click', function() {
+            const menu = document.querySelector('.phone-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'flex';
+                menu.classList.add('active');
+            }
+            else {
+                menu.style.display = 'none';
+            }
+        });
+        
 
     </script>
 </body>

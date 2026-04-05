@@ -34,6 +34,28 @@ div{
     border:0.5px #fff solid;
     color:#fff;
 }
+
+.nav-button-phone{
+    display:none; /*手機板按鈕，預設隱藏*/
+    position: relative;
+}
+
+.phone-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 140px;
+    background: rgba(0,0,0,0.85);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.phone-menu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 /*-------------------------頂端--------------------------*/
 
 hr{
@@ -87,6 +109,7 @@ hr{
 }
 .card{
     margin:10px;
+    width: 9rem !important;
     background: none !important;
     border:none !important;
 }   
@@ -109,7 +132,7 @@ hr{
 .header-row {
     display: flex;
     align-items: center;      /* 垂直置中對齊 */
-    gap: 20px;
+    /* gap: 20px; */
     padding: 0 10%;
     margin-top: 18%;
     justify-content: space-between; /*讓標題和nav分開 */
@@ -135,4 +158,20 @@ hr{
 
 .nav-link{
     background-color: #fff !important; /*調整顏色*/
+}
+
+@media (max-width: 1200px) {
+    .irasuto-header{
+        padding-top:5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-button{
+        display:none; /*隱藏桌面版按鈕*/
+    }
+    .nav-button-phone{
+        float:right;
+        display:block; /*顯示手機版按鈕*/
+    }
 }
