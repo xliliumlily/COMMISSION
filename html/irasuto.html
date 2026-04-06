@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>作品合集</title>
      <link rel="stylesheet" href="../css/STYLE2.css"><!--css-->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><!--bootstrap-->
 </head>
      <!--字型-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet"><!--中文字型-->
+     <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+     <!--中文字型-->
      <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet"><!--數字字型-->
 </head>
 <body>
@@ -38,17 +40,15 @@
         <div class="irasuto-header"></div>
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" onclick="showPage(1)">1</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="showPage(1)">插畫</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="showPage(2)">2</a>
+                <a class="nav-link" href="#" onclick="showPage(2)">插畫-雜</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="showPage(3)">3</a>
+                <a class="nav-link" href="#" onclick="showPage(3)">其他領域</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" onclick="showPage(4)">4</a>
-            </li>
+
         </ul>
     </div>
 
@@ -62,30 +62,37 @@
         <div class="nav-card-img-all"><!--2026年的精華img的統一div-->
             <!--img-->
             <div class="card" style="width:8rem;">
+                <img src="../img/02/02-12.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片2" data-img="../img/02/big/0401-2.jpg">
+                <div class="card-body">
+                    <p class="card-text">➤同人創作立繪</p>
+                </div>
+            </div>
+            <!--img-->
+            <div class="card" style="width:8rem;">
                 <!--
                     data-bs-toggle: 點擊會觸發Bootstrap大圖框框
                     data-bs-target: 指定要觸發哪個大圖框框
                     data-title: 大圖的標題
                     data-img: 大圖框框的圖片來源 (要放其他圖片改這裡就好)
                 -->
-                <img src="../img/02/02-1.png" class="card-img-top preview-img" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片1" data-img="../img/02/big/0118.jpg">
+                <img src="../img/02/02-1.png" class="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片1" data-img="../img/02/big/0118.jpg">
                 <!-- <img src="../img/02/02-1.png" class="card-img-top" alt="" > -->
                 <div class="card-body">
-                    <p class="card-text">123456</p>
+                    <p class="card-text">➤同人創作插圖</p>
                 </div>
             </div>
             <!--img-->
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-2.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片2" data-img="../img/02/big/0209-2-1.jpg">
                 <div class="card-body">
-                    <p class="card-text">123456</p>
+                    <p class="card-text">➤同人創作插圖</p>
                 </div>
             </div>
             <!--img-->
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-3.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片3" data-img="../img/02/big/1226.jpg">
                 <div class="card-body">
-                    <p class="card-text">123456</p>
+                    <p class="card-text">➤同人創作插圖</p>
                 </div>
             </div>
         </div>
@@ -99,7 +106,7 @@
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-4.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片4" data-img="../img/02/big/wakuwaku.jpg">
                 <div class="card-body">
-                    <p class="card-text">屁眼123</p>
+                    <p class="card-text">➤同人創作插圖</p>
                 </div>
             </div>
 
@@ -107,7 +114,7 @@
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-5.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片5" data-img="../img/02/big/3.jpg">
                 <div class="card-body">
-                    <p class="card-text">123456</p>
+                    <p class="card-text">➤原創創作插圖</p>
                 </div>
             </div>
 
@@ -115,7 +122,7 @@
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-6.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片6" data-img="../img/02/big/65.jpg">
                 <div class="card-body">
-                    <p class="card-text">123456</p>
+                    <p class="card-text">➤私人案件委託</p>
                 </div>
             </div>
 
@@ -123,7 +130,7 @@
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-7.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片7" data-img="../img/02/big/68-2.jpg">
                 <div class="card-body">
-                    <p class="card-text">123456</p>
+                    <p class="card-text">➤私人案件委託</p>
                 </div>
             </div>
 
@@ -131,7 +138,7 @@
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-8.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片8" data-img="../img/02/big/67-2.jpg">
                 <div class="card-body">
-                    <p class="card-text">123456</p>
+                    <p class="card-text">➤私人案件委託</p>
                 </div>
             </div>
 
@@ -139,7 +146,23 @@
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-9.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片9" data-img="../img/02/big/63.jpg">
                 <div class="card-body">
-                    <p class="card-text">123456</p>
+                    <p class="card-text">➤私人案件委託</p>
+                </div>
+            </div>
+
+            <!--img-->
+            <div class="card" style="width:8rem;">
+                <img src="../img/02/02-10.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">未設定大圖</p>
+                </div>
+            </div>
+
+            <!--img-->
+            <div class="card" style="width:8rem;">
+                <img src="../img/02/02-11.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">未設定大圖</p>
                 </div>
             </div>
 
@@ -147,39 +170,34 @@
             <div class="card" style="width:8rem;">
                 <img src="../img/02/02-1.png" class="card-img-top" alt="">
                 <div class="card-body">
-                    <p class="card-text">123456媽媽123456649878788995959559959</p>
+                    <p class="card-text">未設定</p>
                 </div>
             </div>
-
-            <!--img-->
-            <div class="card" style="width:8rem;">
-                <img src="../img/02/02-1.png" class="card-img-top" alt="">
-                <div class="card-body">
-                    <p class="card-text">123456</p>
-                </div>
-            </div>
-
-            <!--img-->
-            <div class="card" style="width:8rem;">
-                <img src="../img/02/02-1.png" class="card-img-top" alt="">
-                <div class="card-body">
-                    <p class="card-text">123456</p>
-                </div>
-            </div>
-        </div>    
+        </div>
+        <!--    
         <div class="nav-years">
             <p>2024</p><hr>
         </div>
+        -->
     </div>
 
-        <!--第二頁-->
+
+        <!-------------------------------------------------第二頁-------------------------------------------->
     <div class="nav-main" id="page2" style="display:none;">
         <div class="nav-years">
             <p>第二頁</p><hr>
         </div>   
+         <!--img-->
+            <div class="card" style="width:8rem;">
+                <img src="../img/02/02-4.png" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-title="大圖片4" data-img="../img/02/big/wakuwaku.jpg">
+                <div class="card-body">
+                    <p class="card-text">➤同人創作插圖</p>
+                </div>
+            </div>
+
     </div>
 
-        <!--第三頁-->
+        <!-------------------------------------------------第三頁------------------------------------------------------>
     <div class="nav-main" id="page3" style="display:none;">
         <div class="nav-years">
             <p>第三頁</p><hr>
