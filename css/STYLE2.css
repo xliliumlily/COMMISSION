@@ -15,16 +15,18 @@ div{
     height:100px;
     background:url(../img/02/03.png)repeat-x;
     background-size:38px;
-
     padding:0.7%;
-    
     top: 0px;
     z-index:999;
 }
 .nav-button{
     float: right;
 }
+.nav-button button:hover{
+    background-color: #86711d;
+}
 .nav-top button{
+    /*預設top上的全部按鈕包含電腦版與縮起來的版本*/
     /*想再更寬鬆一點*/
     margin-right:3px;
     font-family: "Cactus Classical Serif", serif;
@@ -174,9 +176,10 @@ hr{
 /*---------------------------------------更改了點開大圖的基本樣式------------------------------------------*/
 /*大圖背景顏色*/
 .modal-content{
-background:url(../img/02/05.png) !important;
-background-color: #ecd7c0 !important;
-background-size:50px !important;
+    border:1px #482806 solid !important;
+    background:url(../img/02/05.png) !important;
+    background-color: #ecd7c0 !important;
+    background-size:50px !important;
 }
 .modal-header{
     border-bottom:none !important;
