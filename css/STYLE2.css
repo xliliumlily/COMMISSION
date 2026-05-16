@@ -30,7 +30,7 @@ div{
     /*想再更寬鬆一點*/
     margin-right:3px;
     font-family: "Cactus Classical Serif", serif;
-    font-size:12px;
+    font-size:14px;
     background: none;
     border-radius:10px;
     border:0.5px #fff solid;
@@ -113,7 +113,8 @@ hr{
     font-family: "Noto Serif TC", serif;
     font-weight: 500;
     text-align: left;
-    font-size:12px;
+    font-size:15px;
+    color: #a04210;
 }
 .card img{
     border-radius:10px;
@@ -186,9 +187,6 @@ hr{
     padding-bottom:0 !important;
 }
 /*關閉按鈕待確認*/
-.btn-close {
-    color: #ffe69a !important;
-}
 .modal-title{
     font-family: "Noto Serif TC", serif;
     font-weight: 600;
@@ -213,4 +211,26 @@ hr{
         float:right;
         display:block; /*顯示手機版按鈕*/
     }
+}
+
+.daigaku{
+     width: 600px; /* 容器寬度 */
+  
+}
+
+.carousel-control-prev{
+        opacity: 1 !important;
+    }
+.carousel-control-next{
+    opacity: 1 !important;
+}
+.carousel-indicators button{
+    width: 2.5rem  !important;
+    height: 2rem !important;
+    background: url(../../img/02/star.svg)no-repeat !important;
+    background-size: 28px!important;
+}
+.btn-close{
+    background: url(../img/02/06.png)no-repeat !important;
+    background-size: 30px!important;
 }
