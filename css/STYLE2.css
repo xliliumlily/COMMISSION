@@ -175,15 +175,15 @@ hr{
     min-height: 46px; 
 }
 .nav a:hover{
-    color: #8c3b01;
+    color: #fda22b;
 }
 a.nav-link.active{
     /* border: 1px solid #fff; */
     border-radius: 10px 10px 0px 0px; /*這裡如果要加邊框可能要改圖檔*/
-    color:orange;  /* 顏色改成橘色或咖啡色 */
+    color:rgb(109, 72, 4);  /* 顏色改成橘色或咖啡色 */
 }
 .nav a:not(.active){
-    background-color: #9e846d;
+    background-color: #5a412c;
 }
 
 .header-row ul{
@@ -230,12 +230,18 @@ a.nav-link.active{
     }
 }
 /*第二頁*/
+.page2-title{
+filter: drop-shadow(0px 0px 2px #72624d);
+}
 .page2-title, .page2-content{
-    filter: drop-shadow(0px 0px 2px #72624d);
+    font-family: "Noto Serif TC", serif;
+    
 }
 
 .page2-content {
+    color: #a04210;
     text-align: left !important;
+    filter: drop-shadow(0px 0px .5px #72624d);
 }
 
 .daigaku{
@@ -258,4 +264,11 @@ a.nav-link.active{
 .btn-close{
     background: url(../img/02/06.png)no-repeat !important;
     background-size: 30px!important;
+}
+.text-bottom{
+    background-color: #7a5540;
+    padding: 5%;
+    margin: 10% 5%;
+    border-radius: 30px;
+    border:4px dashed #fff;
 }
