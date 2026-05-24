@@ -128,12 +128,27 @@ hr{
 .card-body{
     padding:0px !important;
 }
-.nav-card-img-all{
-    display:flex;
-    flex-wrap:wrap;
-    margin-bottom:10%;
-    justify-content: space-between; /*圖片左右對齊?*/
-    /*justify-content: center;*/
+
+#page1 .nav-card-img-all{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 改成一排 4 張 */
+    gap: 0 4%;                         
+    margin-bottom: 10%;
+}
+
+
+#page1 .card{
+    width: 100% !important;
+    margin: 0;
+    background: none !important;
+    border: none !important;
+}
+
+#page1 .card img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .header-row {
@@ -177,17 +192,35 @@ hr{
 .nav a:hover{
     color: #fda22b;
 }
-a.nav-link.active{
-    /* border: 1px solid #fff; */
-    border-radius: 10px 10px 0px 0px; /*這裡如果要加邊框可能要改圖檔*/
-    color:rgb(109, 72, 4);  /* 顏色改成橘色或咖啡色 */
+
+
+.header-row ul{
+    background: none;
 }
-.nav a:not(.active){
+
+/* 頁籤 */
+.header-row .nav-link{
+    font-family: "Cactus Classical Serif", serif;
+    color: #fff;
+    min-height: 46px;
+    padding: 12px 32px;
+    border-radius: 14px 14px 0 0;
+    overflow: hidden;
+}
+
+/* 未開啟的頁籤 */
+.header-row .nav-link:not(.active){
     background-color: #5a412c;
 }
 
-.header-row ul{
-    background: url(../img/02/01.png);
+/* 目前頁面 */
+.header-row .nav-link.active{
+    background: url(../img/02/01.png) repeat;
+    color: rgb(109, 72, 4);
+    border: 1px solid #fff;
+    border-bottom: none;
+    border-radius: 14px 14px 0 0;
+    overflow: hidden;
 }
 
 /*---------------------------------------更改了點開大圖的基本樣式------------------------------------------*/
@@ -229,6 +262,26 @@ a.nav-link.active{
         display:block; /*顯示手機版按鈕*/
     }
 }
+
+@media (max-width: 900px) {
+    #page1 .nav-card-img-all{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #page1 .nav-card-img-all{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 6%;
+    }
+}
+
+@media (max-width: 420px) {
+    #page1 .nav-card-img-all{
+        grid-template-columns: 1fr;
+    }
+}
+
 /*第二頁*/
 .page2-title{
 filter: drop-shadow(0px 0px 2px #72624d);
